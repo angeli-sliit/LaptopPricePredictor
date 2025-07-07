@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Prediction Result</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="title">
+            <h3>💻 Prediction Result</h3>
+        </div>
+
+        <div class="inputfild">
+            <label><strong>RAM:</strong></label>
+            <span>{{ ram }} GB</span>
+        </div>
+
+        <div class="inputfild">
+            <label><strong>Weight:</strong></label>
+            <span>{{ weight }} kg</span>
+        </div>
+
+        <div class="inputfild">
+            <label><strong>Company:</strong></label>
+            <span>{{ company }}</span>
+        </div>
+
+        <div class="inputfild">
+            <label><strong>Type:</strong></label>
+            <span>{{ typename }}</span>
+        </div>
+
+        <div class="inputfild">
+            <label><strong>OS:</strong></label>
+            <span>{{ os }}</span>
+        </div>
+
+        <div class="inputfild">
+            <label><strong>CPU:</strong></label>
+            <span>{{ cpu }}</span>
+        </div>
+
+        <div class="inputfild">
+            <label><strong>GPU:</strong></label>
+            <span>{{ gpu }}</span>
+        </div>
+
+        <div class="inputfild">
+            <label><strong>Touchscreen:</strong></label>
+            <span>{{ touchscreen }}</span>
+        </div>
+
+        <div class="inputfild">
+            <label><strong>IPS:</strong></label>
+            <span>{{ ips }}</span>
+        </div>
+
+        <div class="inputfild">
+            <label><strong>Currency:</strong></label>
+            <span>{{ currency }}</span>
+        </div>
+
+        <div class="result">
+            <h3>💰 Estimated Price: <span>{{ pred }}</span></h3>
+        </div>
+        <br>
+        <div class="inputfild">
+            <a href="/" class="btn">← Back</a>
+        </div>
+    </div>
+</body>
+</html>
